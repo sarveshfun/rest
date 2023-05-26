@@ -1,0 +1,41 @@
+# Project Name login rest api
+
+This express server get data  of student from  student  save  in sqlitedb (DB Browser for SQLite)  file is  data.db which very light 
+also you need to install DB Browser for SQLite   from this link https://sqlitebrowser.org/dl/
+
+
+
+
+## Technologies Used
+
+- express
+- sqlite3
+- bycrypt
+
+## Installation
+
+
+
+1. Clone the repository:
+
+   ```shell
+   git clone https://github.com/sarveshfun/rest_api
+   once the clone repostiary  switch the branch login
+   by using commond
+   git checkout login
+
+
+
+2 To install dependency
+```shell
+
+npm install
+
+ ## to start the serverg  run follwing command
+```shell
+
+npm start
+
+
+
+

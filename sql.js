@@ -1,5 +1,5 @@
 const sqlite3 = require('sqlite3').verbose();
-//let db = new sqlite3.Database(':memory:');
+
 
 
 
@@ -14,17 +14,18 @@ let db = new sqlite3.Database('./data.db', err => {
   });
   
 
-
-
+ return  new Promise((reslove,reject)=>{
   db.run(sql,data,err=>{
        if(err){
+            reject('unsucess')
          console.log(err.message)
        } else{
-           return "success"
+        console.log("data is successfully added in database")
+             reslove("success")
        }
 
-  })
+  })})
 
-  return "succes"
+ 
 
  }
